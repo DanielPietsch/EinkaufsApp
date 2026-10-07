@@ -1,0 +1,30 @@
+package Webtech.EinkaufsApp;
+
+public class Item {
+    private Long id;
+    private String name;
+    private boolean done;
+
+    public Item(Long id, String name, boolean done) {
+        this.id = id;
+        this.name = name;
+        this.done = done;
+    }
+
+    // leerer Konstruktor für Spring, Getter und Setter
+    public Item(){}
+    public Long getId() { return id; }
+    public void setId(Long id) { this.id = id; }
+    public String getName() {
+        return name;
+    }
+    public void setName(String name) {
+        this.name = name;
+    }
+    public boolean isDone() { return done; }
+    public void setDone(boolean done) { this.done = done; }
+
+
+
+
+}
